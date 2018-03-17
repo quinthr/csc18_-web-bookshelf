@@ -204,10 +204,16 @@ def signup():
 def interest():
     all_genres = Genre.query.order_by().all()
     userid = current_user.id
-    print(current_user.id)
     user = User.query.filter_by(id=userid).first()
     if request.method == 'POST':
-        difficulty = request.form.get('interest')
+        interests = request.form.getlist('interests')
+        print(interests)
+        if interests is not None:
+            for i in interests:
+                genre_selected = Genre.query.filter_by(genre_name=i).first()
+                user.interests.append(genre_selected)
+                db.session.commit()
+        return redirect(url_for('home'))
     return render_template('interest.html', genres=all_genres)
 
 @app.route('/home', defaults={'page_num': 1}, methods=['GET', 'POST'])
