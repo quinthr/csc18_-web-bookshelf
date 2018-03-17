@@ -52,7 +52,7 @@ class Addbook(FlaskForm):
     isbn = StringField('ISBN', validators=[Length(min=1, max=13)])
     type = SelectField('Type', validators=[InputRequired()], choices=[('', 'Types'), ('Hard bound', 'Hard bound'),
                                                                       ('Soft bound', 'Soft bound')])
-    categories = SelectField('Categories', validators=[InputRequired()], choices=[('', 'Categories'),
+    genre = SelectField('Genre', validators=[InputRequired()], choices=[('', 'Genre'),
                                                                                   ('Academics', 'Academics'), ('Fantasy', 'Fantasy'), ('Mystery', 'Mystery'),
                                                                                   ('Science Fiction', 'Science Fiction'), ('Classic', 'Classic'),
                                                                                   ('Action and Adventure', 'Action and Adventure'), ('Health', 'Health'),

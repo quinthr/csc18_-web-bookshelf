@@ -24,10 +24,13 @@ Register
     .panel-title{
         text-align: center;
         font-size: large;
-    }
-    .panel > .panel-heading {
-        background-image: none;
         background-color: #083C5D;
+        color: white;
+        padding: 2%;
+    }
+    .panel-heading {
+        background-image: none;
+        background-color: #1D2731;
         color: white;
         font-family: "Josefin Sans";
         font-weight: bold;
@@ -35,11 +38,11 @@ Register
     }
     .panel > .panel-body {
         color: #1D2731;
-        background-color: #1D2731;
+        background-color: white;
     }
     .btn{
         background-image: none;
-        background-color: #083C5D;
+        background-color: #1D2731;
     }
     .logo {
         transform: scale(0.5);
@@ -84,10 +87,11 @@ Register
     }
 
     label img {
-      height: 150px;
-      width: 150px;
+      height: 300px;
+      width: 250px;
       transition-duration: 0.2s;
       transform-origin: 50% 50%;
+      border: 2px solid white;
     }
 
     :checked + label {
@@ -107,7 +111,7 @@ Register
     .titlecard {
         margin-right: 0%;
         text-align: center;
-        color: white;
+        color: #1D2731;
         font-size: medium;
     }
     .border {
@@ -132,10 +136,11 @@ Register
 <div class="container1">
 
     <div class="row">
-       <div class="col-md-6 col-md-offset-3">
+       <div class="col-md-8 col-md-offset-2">
            <div class="panel panel-default">
-            <div class="panel-heading">
-                    <h3 class="panel-title">ADD YOUR INTERESTS</h3>
+            <div class="heading">
+
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-star" style="margin-right:2%;"></span>ADD YOUR INTERESTS</h3>
                 </div>
                 <div class="panel-body">
             <form action="/interest" method="post" class="form" role="form" autocomplete="off">
