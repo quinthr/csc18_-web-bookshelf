@@ -1,0 +1,15 @@
+.product-men img {
+	width: 50% !important;
+}
+.btn btn-success btntab{
+    color: #F7F5E6 !important;
+}
+.rad-txt > .nav-tabs > li{
+    background-color: #E8E8E8 !important;
+    color: #333A56 !important;
+    border: 0px;
+}
+.abtext {
+    margin-bottom: 5px;
+    top: 20px;
+}
