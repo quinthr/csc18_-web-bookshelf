@@ -1722,7 +1722,9 @@ form.form_w3layouts {
     display: inline-block;
     font-family: 'Merriweather Sans', sans-serif;
 }
-
+.single-item{
+    display: inline !important;
+}
 .contact-form input[type="text"]:first-child {
     margin-right: 1em;
 }
